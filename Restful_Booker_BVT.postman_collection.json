@@ -25,16 +25,28 @@
 									"    pm.expect(jsonData).to.not.have.lengthOf(0);",
 									"});",
 									"",
-									"postman.setNextRequest(\"Ping\");",
+									"postman.setNextRequest(null);",
 									""
 								],
 								"type": "text/javascript"
 							}
 						}
 					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
 						"method": "GET",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
 							"raw": "{{rb_url}}/booking",
 							"host": [
@@ -1139,9 +1151,21 @@
 					}
 				}
 			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "GET",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
 					"raw": "{{rb_url}}/ping",
 					"host": [
